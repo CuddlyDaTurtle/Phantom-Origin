@@ -1,0 +1,22 @@
+{
+	"loading_priority": 1,
+	"powers": [
+		"origins:phantomize",
+		"origins:translucent",
+		"origins:phasing",
+		"origins:invisibility",
+		"origins:burn_in_daylight",
+		"origins:hunger_over_time",
+		"origins:fragile",
+		"origins:consume",
+		"origins:health_change",
+		"origins:health_change0",
+		"origins:health_change1",
+		"origins:health_change2",
+		"origins:health",
+		"origins:health_go_down"
+	],
+	"icon": "minecraft:phantom_membrane",
+	"order": 2,
+	"impact": 3
+}

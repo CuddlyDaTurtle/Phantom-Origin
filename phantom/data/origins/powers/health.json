@@ -1,0 +1,11 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": false
+    },
+    "name": "Extra Life",
+    "description": "Use your Secondary Key while holding a Phantom Membrane to gain an extra heart - Max is 3."
+}

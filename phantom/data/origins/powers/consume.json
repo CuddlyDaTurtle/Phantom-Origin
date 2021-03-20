@@ -1,0 +1,86 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "clear @s phantom_membrane 1",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:if_else",
+        "condition":
+        {
+          "type": "origins:resource",
+          "resource": "origins:health",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "origins:health",
+          "change": 1
+        },
+        "else_action": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins:health",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          "if_action": {
+            "type": "origins:change_resource",
+            "resource": "origins:health",
+            "change": 1
+          },
+          "else_action": {
+            "type": "origins:if_else",
+            "condition": {
+              "type": "origins:resource",
+              "resource": "origins:health",
+              "comparison": "==",
+              "compare_to": 2
+            },
+            "if_action": {
+              "type": "origins:change_resource",
+              "resource": "origins:health",
+              "change": 1
+            }
+          }
+        }
+      }
+    ]
+	},
+  "item_action": {
+    "type": "origins:consume",
+    "amount": 1
+  },
+	"cooldown": 0,
+	"hud_render":
+	{
+		"should_render": false
+	},
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:phantom_membrane" }
+          }
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins:health",
+          "comparison": "<",
+          "compare_to": 4
+        }
+    ]
+  },
+	"key": "secondary",
+	"hidden": true
+}

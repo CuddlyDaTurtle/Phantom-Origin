@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_over_time",
+    "interval": "36000",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "origins:health",
+        "change": -1
+    },
+    "name": "Life Lossage",
+    "description": "Each of your extra hearts only last half an hour."
+}
